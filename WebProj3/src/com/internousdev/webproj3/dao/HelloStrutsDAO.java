@@ -16,9 +16,9 @@ try {
 PreparedStatement ps = con.prepareStatement(sql);
 ResultSet rs = ps.executeQuery();
 if (rs.next()) {
-dto.setResult("MySQL と接続できます。");
+dto.setResult("MySQLと接続できます。");
 }else{
-dto.setResult("MySQL と接続できません。");
+dto.setResult("MySQLと接続できません。");
 }
 } catch (SQLException e) {
 e.printStackTrace();
